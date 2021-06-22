@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     # Standard drop-in approach that should work for most people.
-    - uses: colomemaria/epiScanpy
+    - uses: colomemaria/epiScanpy@master
       with:
         docs-folder: "docs/"
     # Example of using a custom build-command.
