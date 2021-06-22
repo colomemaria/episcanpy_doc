@@ -1,0 +1,51 @@
+# This is a basic workflow that is manually triggered
+
+name: Sphinx build
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      name:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'Sphinx build'
+        # Default value if no value is explicitly provided
+        default: 'Sphinx build'
+        # Input has to be provided for the workflow to run
+        required: true
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    # Standard drop-in approach that should work for most people.
+    - uses: colomemaria/epiScanpy
+      with:
+        docs-folder: "docs/"
+    # Example of using a custom build-command.
+    - uses: ammaraskar/sphinx-action@master
+      with:
+        build-command: "sphinx-build -b html . _build"
+        docs-folder: "docs2/"
+    # Grabbing custom dependencies and building as a pdf.
+    - uses: ammaraskar/sphinx-action@master
+      with:
+        pre-build-command: "apt-get update -y && apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
+        build-command: "make latexpdf"
+        docs-folder: "docs2/"
+    # Great extra actions to compose with:
+    # Create an artifact of the html output.
+    - uses: actions/upload-artifact@v1
+      with:
+        name: DocumentationHTML
+        path: docs/_build/html/
+    # Create an artifact out of the previously built pdf.
+    - uses: actions/upload-artifact@v1
+      with:
+        name: Documentation
+        path: docs2/_build/latex/pdfexample.pdf
