@@ -1,0 +1,32 @@
+# This is a basic workflow that is manually triggered
+
+name: Clone EpiScanpy
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      name:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'Clone EpiScanpy'
+        # Default value if no value is explicitly provided
+        default: 'Clone EpiScanpy'
+        # Input has to be provided for the workflow to run
+        required: true
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clone EpiScanpy
+      uses: actions/checkout@master
+      with:
+        repository: colomemaria/epiScanpy
+        path: ./
+        
+    - name: Show Working directory
+      run: ls
