@@ -38,5 +38,5 @@ cp -Rf ../build_doc/* episcanpy_doc/docs/.
 cd episcanpy_doc
 git add --all
 git commit -m "update website"
-git push
+git push origin HEAD:refs/heads/master
 ```
