@@ -31,5 +31,12 @@ sphinx-build -b html epiScanpy/docs build_doc
 
 ## Update the compiled html files to Github
 ```
-git update
+mkdir episcanpy_html
+cd episcanpy_html
+git clone https://github.com/colomemaria/episcanpy_doc.git
+cp -Rf ../build_doc/* episcanpy_doc/docs/.
+cd episcanpy_doc
+git add --all
+git commit -m "update website"
+git push
 ```
