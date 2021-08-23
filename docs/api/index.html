@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>API &mdash; epiScanpy 0.3.1+47.gb297b30 documentation</title>
+  <title>API &mdash; epiScanpy 0.3.1+67.g3ad26ed documentation</title>
   
 
   
@@ -43,7 +43,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="episcanpy.ct.bld_mtx_fly" href="episcanpy.ct.bld_mtx_fly.html" />
+    <link rel="next" title="episcanpy.api.ct.bld_mtx_fly" href="episcanpy.api.ct.bld_mtx_fly.html" />
     <link rel="prev" title="Installation" href="../installation.html" /> 
 </head>
 
@@ -68,7 +68,7 @@
             
             
               <div class="version">
-                0.3.1+47.gb297b30
+                0.3.1+67.g3ad26ed
               </div>
             
           
@@ -101,123 +101,127 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">API</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#count-matrices-ct">Count Matrices: CT</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#building-count-matrices">Building count matrices</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="episcanpy.ct.bld_mtx_fly.html">episcanpy.ct.bld_mtx_fly</a></li>
+<li class="toctree-l4"><a class="reference internal" href="episcanpy.api.ct.bld_mtx_fly.html">episcanpy.api.ct.bld_mtx_fly</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#load-features">Load features</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="episcanpy.ct.load_features.html">episcanpy.ct.load_features</a></li>
-<li class="toctree-l4"><a class="reference internal" href="episcanpy.ct.make_windows.html">episcanpy.ct.make_windows</a></li>
-<li class="toctree-l4"><a class="reference internal" href="episcanpy.ct.size_feature_norm.html">episcanpy.ct.size_feature_norm</a></li>
-<li class="toctree-l4"><a class="reference internal" href="episcanpy.ct.plot_size_features.html">episcanpy.ct.plot_size_features</a></li>
-<li class="toctree-l4"><a class="reference internal" href="episcanpy.ct.name_features.html">episcanpy.ct.name_features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="episcanpy.api.ct.load_features.html">episcanpy.api.ct.load_features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="episcanpy.api.ct.make_windows.html">episcanpy.api.ct.make_windows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="episcanpy.api.ct.size_feature_norm.html">episcanpy.api.ct.size_feature_norm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="episcanpy.api.ct.plot_size_features.html">episcanpy.api.ct.plot_size_features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="episcanpy.api.ct.name_features.html">episcanpy.api.ct.name_features</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#reading-methylation-file">Reading methylation file</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="episcanpy.ct.build_count_mtx.html">episcanpy.ct.build_count_mtx</a></li>
-<li class="toctree-l4"><a class="reference internal" href="episcanpy.ct.read_cyt_summary.html">episcanpy.ct.read_cyt_summary</a></li>
-<li class="toctree-l4"><a class="reference internal" href="episcanpy.ct.load_met_noimput.html">episcanpy.ct.load_met_noimput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="episcanpy.api.ct.build_count_mtx.html">episcanpy.api.ct.build_count_mtx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="episcanpy.api.ct.read_cyt_summary.html">episcanpy.api.ct.read_cyt_summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="episcanpy.api.ct.load_met_noimput.html">episcanpy.api.ct.load_met_noimput</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#reading-open-chromatin-atac-file">Reading open chromatin(ATAC) file</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="episcanpy.ct.bld_atac_mtx.html">episcanpy.ct.bld_atac_mtx</a></li>
-<li class="toctree-l4"><a class="reference internal" href="episcanpy.ct.save_sparse_mtx.html">episcanpy.ct.save_sparse_mtx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="episcanpy.api.ct.bld_mtx_fly.html">episcanpy.api.ct.bld_mtx_fly</a></li>
+<li class="toctree-l4"><a class="reference internal" href="episcanpy.api.ct.save_sparse_mtx.html">episcanpy.api.ct.save_sparse_mtx</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#general-functions">General functions</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="episcanpy.ct.save_sparse_mtx.html">episcanpy.ct.save_sparse_mtx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="episcanpy.api.ct.save_sparse_mtx.html">episcanpy.api.ct.save_sparse_mtx</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#preprocessing-pp">Preprocessing: PP</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.coverage_cells.html">episcanpy.pp.coverage_cells</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.correlation_pc.html">episcanpy.pp.correlation_pc</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.coverage_features.html">episcanpy.pp.coverage_features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.density_features.html">episcanpy.pp.density_features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.select_var_feature.html">episcanpy.pp.select_var_feature</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.cal_var.html">episcanpy.pp.cal_var</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.variability_features.html">episcanpy.pp.variability_features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.binarize.html">episcanpy.pp.binarize</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.lazy.html">episcanpy.pp.lazy</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.load_metadata.html">episcanpy.pp.load_metadata</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.read_ATAC_10x.html">episcanpy.pp.read_ATAC_10x</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.filter_cells.html">episcanpy.pp.filter_cells</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.filter_features.html">episcanpy.pp.filter_features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.normalize_total.html">episcanpy.pp.normalize_total</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.pca.html">episcanpy.pp.pca</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.normalize_per_cell.html">episcanpy.pp.normalize_per_cell</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.regress_out.html">episcanpy.pp.regress_out</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.subsample.html">episcanpy.pp.subsample</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.downsample_counts.html">episcanpy.pp.downsample_counts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.neighbors.html">episcanpy.pp.neighbors</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.sparse.html">episcanpy.pp.sparse</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.log1p.html">episcanpy.pp.log1p</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pp.sparse.html">episcanpy.pp.sparse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.coverage_cells.html">episcanpy.api.pp.coverage_cells</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.commonness_features.html">episcanpy.api.pp.commonness_features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.correlation_pc.html">episcanpy.api.pp.correlation_pc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.coverage_features.html">episcanpy.api.pp.coverage_features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.density_features.html">episcanpy.api.pp.density_features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.select_var_feature.html">episcanpy.api.pp.select_var_feature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.cal_var.html">episcanpy.api.pp.cal_var</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.variability_features.html">episcanpy.api.pp.variability_features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.binarize.html">episcanpy.api.pp.binarize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.lazy.html">episcanpy.api.pp.lazy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.load_metadata.html">episcanpy.api.pp.load_metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.read_ATAC_10x.html">episcanpy.api.pp.read_ATAC_10x</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.filter_cells.html">episcanpy.api.pp.filter_cells</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.filter_features.html">episcanpy.api.pp.filter_features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.normalize_total.html">episcanpy.api.pp.normalize_total</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.pca.html">episcanpy.api.pp.pca</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.normalize_per_cell.html">episcanpy.api.pp.normalize_per_cell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.regress_out.html">episcanpy.api.pp.regress_out</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.subsample.html">episcanpy.api.pp.subsample</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.downsample_counts.html">episcanpy.api.pp.downsample_counts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.neighbors.html">episcanpy.api.pp.neighbors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.sparse.html">episcanpy.api.pp.sparse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.log1p.html">episcanpy.api.pp.log1p</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.sparse.html">episcanpy.api.pp.sparse</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#methylation-matrices">Methylation matrices</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="episcanpy.pp.imputation_met.html">episcanpy.pp.imputation_met</a></li>
-<li class="toctree-l4"><a class="reference internal" href="episcanpy.pp.load_met_noimput.html">episcanpy.pp.load_met_noimput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="episcanpy.pp.readandimputematrix.html">episcanpy.pp.readandimputematrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="episcanpy.api.pp.imputation_met.html">episcanpy.api.pp.imputation_met</a></li>
+<li class="toctree-l4"><a class="reference internal" href="episcanpy.api.pp.load_met_noimput.html">episcanpy.api.pp.load_met_noimput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="episcanpy.api.pp.readandimputematrix.html">episcanpy.api.pp.readandimputematrix</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#tools-tl">Tools: TL</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.rank_features.html">episcanpy.tl.rank_features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.lazy.html">episcanpy.tl.lazy</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.load_markers.html">episcanpy.tl.load_markers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.identify_cluster.html">episcanpy.tl.identify_cluster</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.top_feature_genes.html">episcanpy.tl.top_feature_genes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.var_features_to_genes.html">episcanpy.tl.var_features_to_genes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.geneactivity.html">episcanpy.tl.geneactivity</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.diffmap.html">episcanpy.tl.diffmap</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.draw_graph.html">episcanpy.tl.draw_graph</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.tsne.html">episcanpy.tl.tsne</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.umap.html">episcanpy.tl.umap</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.dpt.html">episcanpy.tl.dpt</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.louvain.html">episcanpy.tl.louvain</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.leiden.html">episcanpy.tl.leiden</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.kmeans.html">episcanpy.tl.kmeans</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.hc.html">episcanpy.tl.hc</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.getNClusters.html">episcanpy.tl.getNClusters</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.dendogram.html">episcanpy.tl.dendogram</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.ARI.html">episcanpy.tl.ARI</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.AMI.html">episcanpy.tl.AMI</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.homogeneity.html">episcanpy.tl.homogeneity</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.tl.silhouette.html">episcanpy.tl.silhouette</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.rank_features.html">episcanpy.api.tl.rank_features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.lazy.html">episcanpy.api.tl.lazy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.load_markers.html">episcanpy.api.tl.load_markers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.identify_cluster.html">episcanpy.api.tl.identify_cluster</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.top_feature_genes.html">episcanpy.api.tl.top_feature_genes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.var_features_to_genes.html">episcanpy.api.tl.var_features_to_genes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.geneactivity.html">episcanpy.api.tl.geneactivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.diffmap.html">episcanpy.api.tl.diffmap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.draw_graph.html">episcanpy.api.tl.draw_graph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.tsne.html">episcanpy.api.tl.tsne</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.umap.html">episcanpy.api.tl.umap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.dpt.html">episcanpy.api.tl.dpt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.louvain.html">episcanpy.api.tl.louvain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.leiden.html">episcanpy.api.tl.leiden</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.kmeans.html">episcanpy.api.tl.kmeans</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.hc.html">episcanpy.api.tl.hc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.getNClusters.html">episcanpy.api.tl.getNClusters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.dendogram.html">episcanpy.api.tl.dendogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.ARI.html">episcanpy.api.tl.ARI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.AMI.html">episcanpy.api.tl.AMI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.homogeneity.html">episcanpy.api.tl.homogeneity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.silhouette.html">episcanpy.api.tl.silhouette</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#plotting-pl">Plotting: PL</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.pca.html">episcanpy.pl.pca</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.pca_overview.html">episcanpy.pl.pca_overview</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.pca_variance_ratio.html">episcanpy.pl.pca_variance_ratio</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.tsne.html">episcanpy.pl.tsne</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.umap.html">episcanpy.pl.umap</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.rank_feat_groups.html">episcanpy.pl.rank_feat_groups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.rank_feat_groups_violin.html">episcanpy.pl.rank_feat_groups_violin</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.rank_feat_groups_dotplot.html">episcanpy.pl.rank_feat_groups_dotplot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.rank_feat_groups_stacked_violin.html">episcanpy.pl.rank_feat_groups_stacked_violin</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.rank_feat_groups_matrixplot.html">episcanpy.pl.rank_feat_groups_matrixplot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.rank_feat_groups_heatmap.html">episcanpy.pl.rank_feat_groups_heatmap</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.rank_feat_groups_tracksplot.html">episcanpy.pl.rank_feat_groups_tracksplot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.cal_var.html">episcanpy.pl.cal_var</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.violin.html">episcanpy.pl.violin</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.scatter.html">episcanpy.pl.scatter</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.ranking.html">episcanpy.pl.ranking</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.clustermap.html">episcanpy.pl.clustermap</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.stacked_violin.html">episcanpy.pl.stacked_violin</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.heatmap.html">episcanpy.pl.heatmap</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.dotplot.html">episcanpy.pl.dotplot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.matrixplot.html">episcanpy.pl.matrixplot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.tracksplot.html">episcanpy.pl.tracksplot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.dendrogram.html">episcanpy.pl.dendrogram</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.correlation_matrix.html">episcanpy.pl.correlation_matrix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.prct_overlap.html">episcanpy.pl.prct_overlap</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.overlap_heatmap.html">episcanpy.pl.overlap_heatmap</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.cluster_composition.html">episcanpy.pl.cluster_composition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.silhouette.html">episcanpy.pl.silhouette</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.silhouette_tot.html">episcanpy.pl.silhouette_tot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.cal_var.html">episcanpy.pl.cal_var</a></li>
-<li class="toctree-l3"><a class="reference internal" href="episcanpy.pl.variability_features.html">episcanpy.pl.variability_features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.pca.html">episcanpy.api.pl.pca</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.pca_loadings.html">episcanpy.api.pl.pca_loadings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.pca_overview.html">episcanpy.api.pl.pca_overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.pca_variance_ratio.html">episcanpy.api.pl.pca_variance_ratio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.tsne.html">episcanpy.api.pl.tsne</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.umap.html">episcanpy.api.pl.umap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.diffmap.html">episcanpy.api.pl.diffmap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.draw_graph.html">episcanpy.api.pl.draw_graph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.rank_feat_groups.html">episcanpy.api.pl.rank_feat_groups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.rank_feat_groups_violin.html">episcanpy.api.pl.rank_feat_groups_violin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.rank_feat_groups_dotplot.html">episcanpy.api.pl.rank_feat_groups_dotplot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.rank_feat_groups_stacked_violin.html">episcanpy.api.pl.rank_feat_groups_stacked_violin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.rank_feat_groups_matrixplot.html">episcanpy.api.pl.rank_feat_groups_matrixplot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.rank_feat_groups_heatmap.html">episcanpy.api.pl.rank_feat_groups_heatmap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.rank_feat_groups_tracksplot.html">episcanpy.api.pl.rank_feat_groups_tracksplot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.cal_var.html">episcanpy.api.pl.cal_var</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.violin.html">episcanpy.api.pl.violin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.scatter.html">episcanpy.api.pl.scatter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.ranking.html">episcanpy.api.pl.ranking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.clustermap.html">episcanpy.api.pl.clustermap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.stacked_violin.html">episcanpy.api.pl.stacked_violin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.heatmap.html">episcanpy.api.pl.heatmap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.dotplot.html">episcanpy.api.pl.dotplot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.matrixplot.html">episcanpy.api.pl.matrixplot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.tracksplot.html">episcanpy.api.pl.tracksplot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.dendrogram.html">episcanpy.api.pl.dendrogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.correlation_matrix.html">episcanpy.api.pl.correlation_matrix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.prct_overlap.html">episcanpy.api.pl.prct_overlap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.overlap_heatmap.html">episcanpy.api.pl.overlap_heatmap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.cluster_composition.html">episcanpy.api.pl.cluster_composition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.silhouette.html">episcanpy.api.pl.silhouette</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.silhouette_tot.html">episcanpy.api.pl.silhouette_tot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.cal_var.html">episcanpy.api.pl.cal_var</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pl.variability_features.html">episcanpy.api.pl.variability_features</a></li>
 </ul>
 </li>
 </ul>
@@ -311,7 +315,7 @@ Filtering of lowly covered cells.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.bld_mtx_fly</span></code>(tsv_file, annotation[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.ct.bld_mtx_fly.html#episcanpy.api.ct.bld_mtx_fly" title="episcanpy.api.ct.bld_mtx_fly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.bld_mtx_fly</span></code></a>(tsv_file, annotation[, …])</p></td>
 <td><p>Building count matrix on the fly.</p></td>
 </tr>
 </tbody>
@@ -326,19 +330,19 @@ Filtering of lowly covered cells.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.load_features</span></code>(file_features[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.ct.load_features.html#episcanpy.api.ct.load_features" title="episcanpy.api.ct.load_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.load_features</span></code></a>(file_features[, …])</p></td>
 <td><p>The function load features is here to transform a bed file into a usable set of units to measure methylation levels.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.make_windows</span></code>(size[, chromosomes, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.ct.make_windows.html#episcanpy.api.ct.make_windows" title="episcanpy.api.ct.make_windows"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.make_windows</span></code></a>(size[, chromosomes, …])</p></td>
 <td><p>Generate windows/bins of the given size for the appropriate genome (default choice is human).</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.size_feature_norm</span></code>(loaded_feature, size)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.ct.size_feature_norm.html#episcanpy.api.ct.size_feature_norm" title="episcanpy.api.ct.size_feature_norm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.size_feature_norm</span></code></a>(loaded_feature, size)</p></td>
 <td><p>If the features loaded are too smalls or of different sizes, it is possible to normalise them to a unique given size by extending the feature coordinate in both directions.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.plot_size_features</span></code>(loaded_feature[, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.ct.plot_size_features.html#episcanpy.api.ct.plot_size_features" title="episcanpy.api.ct.plot_size_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.plot_size_features</span></code></a>(loaded_feature[, …])</p></td>
 <td><p>Plot the different feature sizes in an histogram.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.name_features</span></code>(loaded_features)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.ct.name_features.html#episcanpy.api.ct.name_features" title="episcanpy.api.ct.name_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.name_features</span></code></a>(loaded_features)</p></td>
 <td><p>Extract the names of the loaded features, specifying the chromosome they originated from.</p></td>
 </tr>
 </tbody>
@@ -353,13 +357,13 @@ Filtering of lowly covered cells.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.build_count_mtx</span></code>(cells, annotation[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.ct.build_count_mtx.html#episcanpy.api.ct.build_count_mtx" title="episcanpy.api.ct.build_count_mtx"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.build_count_mtx</span></code></a>(cells, annotation[, …])</p></td>
 <td><p>Build methylation count matrix for a given annotation.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.read_cyt_summary</span></code>(sample_name, meth_type, …)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.ct.read_cyt_summary.html#episcanpy.api.ct.read_cyt_summary" title="episcanpy.api.ct.read_cyt_summary"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.read_cyt_summary</span></code></a>(sample_name, meth_type, …)</p></td>
 <td><p>Read file from which you want to extract the methylation level and (assuming it is like the Ecker/Methylpy format) extract the number of methylated read and the total number of read for the cytosines covered and in the right genomic context (CG or CH) :param sample_name: name of the file to read to extract key information.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.load_met_noimput</span></code>(matrix_file[, path, save])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.ct.load_met_noimput.html#episcanpy.api.ct.load_met_noimput" title="episcanpy.api.ct.load_met_noimput"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.load_met_noimput</span></code></a>(matrix_file[, path, save])</p></td>
 <td><p>read the raw count matrix and convert it into an AnnData object.</p></td>
 </tr>
 </tbody>
@@ -374,10 +378,10 @@ Filtering of lowly covered cells.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.bld_atac_mtx</span></code>(list_bam_files, loaded_feat)</p></td>
-<td><p>Build a count matrix one set of features at a time.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.ct.bld_mtx_fly.html#episcanpy.api.ct.bld_mtx_fly" title="episcanpy.api.ct.bld_mtx_fly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.bld_mtx_fly</span></code></a>(tsv_file, annotation[, …])</p></td>
+<td><p>Building count matrix on the fly.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.save_sparse_mtx</span></code>(initial_matrix[, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.ct.save_sparse_mtx.html#episcanpy.api.ct.save_sparse_mtx" title="episcanpy.api.ct.save_sparse_mtx"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.save_sparse_mtx</span></code></a>(initial_matrix[, …])</p></td>
 <td><p>Convert regular atac matrix into a sparse Anndata:</p></td>
 </tr>
 </tbody>
@@ -392,7 +396,7 @@ Filtering of lowly covered cells.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.save_sparse_mtx</span></code>(initial_matrix[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.ct.save_sparse_mtx.html#episcanpy.api.ct.save_sparse_mtx" title="episcanpy.api.ct.save_sparse_mtx"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ct.save_sparse_mtx</span></code></a>(initial_matrix[, …])</p></td>
 <td><p>Convert regular atac matrix into a sparse Anndata:</p></td>
 </tr>
 </tbody>
@@ -408,73 +412,76 @@ Filtering of lowly covered cells.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.coverage_cells</span></code>(adata[, key_added, log, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pp.coverage_cells.html#episcanpy.api.pp.coverage_cells" title="episcanpy.api.pp.coverage_cells"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.coverage_cells</span></code></a>(adata[, key_added, log, …])</p></td>
 <td><p>Histogram of the number of open features (in the case of ATAC-seq data) per cell.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.correlation_pc</span></code>(adata, variable[, pc, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pp.commonness_features.html#episcanpy.api.pp.commonness_features" title="episcanpy.api.pp.commonness_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.commonness_features</span></code></a>(adata[, binary, log, …])</p></td>
+<td><p>Display how often a feature is measured as open (for ATAC-seq).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pp.correlation_pc.html#episcanpy.api.pp.correlation_pc" title="episcanpy.api.pp.correlation_pc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.correlation_pc</span></code></a>(adata, variable[, pc, …])</p></td>
 <td><p>Correlation between a given PC and a covariate.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.coverage_features</span></code>(adata[, binary, log, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pp.coverage_features.html#episcanpy.api.pp.coverage_features" title="episcanpy.api.pp.coverage_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.coverage_features</span></code></a>(adata[, binary, log, …])</p></td>
 <td><p>Display how often a feature is measured as open (for ATAC-seq).</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.density_features</span></code>(adata[, threshold, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pp.density_features.html#episcanpy.api.pp.density_features" title="episcanpy.api.pp.density_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.density_features</span></code></a>(adata[, threshold, …])</p></td>
 <td><p>Display how often a feature is measured as open (for ATAC-seq).</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.select_var_feature</span></code>(adata[, min_score, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pp.select_var_feature.html#episcanpy.api.pp.select_var_feature" title="episcanpy.api.pp.select_var_feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.select_var_feature</span></code></a>(adata[, min_score, …])</p></td>
 <td><p>This function computes a variability score to rank the most variable features across all cells.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.cal_var</span></code>(adata[, show, color, save])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pp.cal_var.html#episcanpy.api.pp.cal_var" title="episcanpy.api.pp.cal_var"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.cal_var</span></code></a>(adata[, show, color, save])</p></td>
 <td><p>Show distribution plots of cells sharing features and variability score.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.variability_features</span></code>(adata[, min_score, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pp.variability_features.html#episcanpy.api.pp.variability_features" title="episcanpy.api.pp.variability_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.variability_features</span></code></a>(adata[, min_score, …])</p></td>
 <td><p>This function computes a variability score to rank the most variable features across all cells.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.binarize</span></code>(adata[, copy])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pp.binarize.html#episcanpy.api.pp.binarize" title="episcanpy.api.pp.binarize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.binarize</span></code></a>(adata[, copy])</p></td>
 <td><p>convert the count matrix into a binary matrix.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.lazy</span></code>(adata[, pp_pca, svd_solver, nb_pcs, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pp.lazy.html#episcanpy.api.pp.lazy" title="episcanpy.api.pp.lazy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.lazy</span></code></a>(adata[, pp_pca, svd_solver, nb_pcs, …])</p></td>
 <td><p>Automatically computes PCA coordinates, loadings and variance decomposition, a neighborhood graph of observations, t-distributed stochastic neighborhood embedding (tSNE) Uniform Manifold Approximation and Projection (UMAP)</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.load_metadata</span></code>(adata, metadata_file[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pp.load_metadata.html#episcanpy.api.pp.load_metadata" title="episcanpy.api.pp.load_metadata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.load_metadata</span></code></a>(adata, metadata_file[, …])</p></td>
 <td><p>Load observational metadata in adata.obs.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.read_ATAC_10x</span></code>(matrix[, cell_names, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pp.read_ATAC_10x.html#episcanpy.api.pp.read_ATAC_10x" title="episcanpy.api.pp.read_ATAC_10x"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.read_ATAC_10x</span></code></a>(matrix[, cell_names, …])</p></td>
 <td><p>Load sparse matrix (including matrices corresponding to 10x data) as AnnData objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.filter_cells</span></code>(adata[, min_counts, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pp.filter_cells.html#episcanpy.api.pp.filter_cells" title="episcanpy.api.pp.filter_cells"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.filter_cells</span></code></a>(adata[, min_counts, …])</p></td>
 <td><p>Filter cell outliers based on counts and numbers of genes expressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.filter_features</span></code>(data[, min_counts, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pp.filter_features.html#episcanpy.api.pp.filter_features" title="episcanpy.api.pp.filter_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.filter_features</span></code></a>(data[, min_counts, …])</p></td>
 <td><p>Filter features based on number of cells or counts.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.normalize_total</span></code>(adata[, target_sum, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pp.normalize_total.html#episcanpy.api.pp.normalize_total" title="episcanpy.api.pp.normalize_total"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.normalize_total</span></code></a>(adata[, target_sum, …])</p></td>
 <td><p>Normalize counts per cell.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.pca</span></code>(adata[, n_comps, zero_center, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pp.pca.html#episcanpy.api.pp.pca" title="episcanpy.api.pp.pca"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.pca</span></code></a>(adata[, n_comps, zero_center, …])</p></td>
 <td><p>Principal component analysis <span id="id1">[Pedregosa11]</span>.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.normalize_per_cell</span></code>(adata[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pp.normalize_per_cell.html#episcanpy.api.pp.normalize_per_cell" title="episcanpy.api.pp.normalize_per_cell"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.normalize_per_cell</span></code></a>(adata[, …])</p></td>
 <td><p>Normalize total counts per cell.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.regress_out</span></code>(adata, keys[, n_jobs, copy])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pp.regress_out.html#episcanpy.api.pp.regress_out" title="episcanpy.api.pp.regress_out"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.regress_out</span></code></a>(adata, keys[, n_jobs, copy])</p></td>
 <td><p>Regress out unwanted sources of variation.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.subsample</span></code>(data[, fraction, n_obs, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pp.subsample.html#episcanpy.api.pp.subsample" title="episcanpy.api.pp.subsample"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.subsample</span></code></a>(data[, fraction, n_obs, …])</p></td>
 <td><p>Subsample to a fraction of the number of observations.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.downsample_counts</span></code>(adata[, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pp.downsample_counts.html#episcanpy.api.pp.downsample_counts" title="episcanpy.api.pp.downsample_counts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.downsample_counts</span></code></a>(adata[, …])</p></td>
 <td><p>Downsample counts from count matrix.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.neighbors</span></code>(adata[, n_neighbors, n_pcs, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pp.neighbors.html#episcanpy.api.pp.neighbors" title="episcanpy.api.pp.neighbors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.neighbors</span></code></a>(adata[, n_neighbors, n_pcs, …])</p></td>
 <td><p>Compute a neighborhood graph of observations <span id="id2">[McInnes18]</span>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.sparse</span></code>(adata[, sparse_format, copy])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pp.sparse.html#episcanpy.api.pp.sparse" title="episcanpy.api.pp.sparse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.sparse</span></code></a>(adata[, sparse_format, copy])</p></td>
 <td><p>Transform adata.X from a matrix or array to a sparse matrix.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.log1p</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pp.log1p.html#episcanpy.api.pp.log1p" title="episcanpy.api.pp.log1p"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.log1p</span></code></a>()</p></td>
 <td><p>Logarithmize the data matrix.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.sparse</span></code>(adata[, sparse_format, copy])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pp.sparse.html#episcanpy.api.pp.sparse" title="episcanpy.api.pp.sparse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.sparse</span></code></a>(adata[, sparse_format, copy])</p></td>
 <td><p>Transform adata.X from a matrix or array to a sparse matrix.</p></td>
 </tr>
 </tbody>
@@ -488,13 +495,13 @@ Filtering of lowly covered cells.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.imputation_met</span></code>(adata[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pp.imputation_met.html#episcanpy.api.pp.imputation_met" title="episcanpy.api.pp.imputation_met"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.imputation_met</span></code></a>(adata[, …])</p></td>
 <td><p>Impute missing values in methyaltion level matrices.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.load_met_noimput</span></code>(matrix_file[, path, save])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pp.load_met_noimput.html#episcanpy.api.pp.load_met_noimput" title="episcanpy.api.pp.load_met_noimput"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.load_met_noimput</span></code></a>(matrix_file[, path, save])</p></td>
 <td><p>read the raw count matrix and convert it into an AnnData object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.readandimputematrix</span></code>(file_name[, min_coverage])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pp.readandimputematrix.html#episcanpy.api.pp.readandimputematrix" title="episcanpy.api.pp.readandimputematrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pp.readandimputematrix</span></code></a>(file_name[, min_coverage])</p></td>
 <td><p>Temporary function to load and impute methyaltion count matrix into an AnnData object</p></td>
 </tr>
 </tbody>
@@ -509,70 +516,70 @@ Filtering of lowly covered cells.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.rank_features</span></code>(adata, groupby[, omic, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.tl.rank_features.html#episcanpy.api.tl.rank_features" title="episcanpy.api.tl.rank_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.rank_features</span></code></a>(adata, groupby[, omic, …])</p></td>
 <td><p>It is a wrap-up function of scanpy sc.tl.rank_genes_groups function.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.lazy</span></code>(adata[, pp_pca, copy])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.tl.lazy.html#episcanpy.api.tl.lazy" title="episcanpy.api.tl.lazy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.lazy</span></code></a>(adata[, pp_pca, copy])</p></td>
 <td><p>Automatically computes PCA coordinates, loadings and variance decomposition, a neighborhood graph of observations, t-distributed stochastic neighborhood embedding (tSNE) Uniform Manifold Approximation and Projection (UMAP)</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.load_markers</span></code>(path, marker_list_file)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.tl.load_markers.html#episcanpy.api.tl.load_markers" title="episcanpy.api.tl.load_markers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.load_markers</span></code></a>(path, marker_list_file)</p></td>
 <td><p>Convert list of known cell type markers from literature to a dictionary Input list of known marker genes First row is considered the header</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.identify_cluster</span></code>(adata, cell_type, …[, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.tl.identify_cluster.html#episcanpy.api.tl.identify_cluster" title="episcanpy.api.tl.identify_cluster"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.identify_cluster</span></code></a>(adata, cell_type, …[, …])</p></td>
 <td><p>Use markers of a given cell type to plot peak openness for peaks in promoters of the given markers Input cell type, cell type markers, peak promoter intersections</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.top_feature_genes</span></code>(adata, gtf_file[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.tl.top_feature_genes.html#episcanpy.api.tl.top_feature_genes" title="episcanpy.api.tl.top_feature_genes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.top_feature_genes</span></code></a>(adata, gtf_file[, …])</p></td>
 <td><p>Deprecated - Please use epi.tl.var_features_to_genes instead.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.var_features_to_genes</span></code>(adata, gtf_file[, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.tl.var_features_to_genes.html#episcanpy.api.tl.var_features_to_genes" title="episcanpy.api.tl.var_features_to_genes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.var_features_to_genes</span></code></a>(adata, gtf_file[, …])</p></td>
 <td><p>Once you called the most variable features.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.geneactivity</span></code>(adata, gtf_file[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.tl.geneactivity.html#episcanpy.api.tl.geneactivity" title="episcanpy.api.tl.geneactivity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.geneactivity</span></code></a>(adata, gtf_file[, …])</p></td>
 <td><p>Build an AnnData object containing the number of open features (windows, peaks, etc) overlapping genes (gene bodies + 5kb upstream of the TSS).</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.diffmap</span></code>(adata[, n_comps, copy])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.tl.diffmap.html#episcanpy.api.tl.diffmap" title="episcanpy.api.tl.diffmap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.diffmap</span></code></a>(adata[, n_comps, copy])</p></td>
 <td><p>Diffusion Maps <span id="id3">[Coifman05]</span> <span id="id4">[Haghverdi15]</span> <a class="reference internal" href="../references.html#wolf18" id="id5"><span>[Wolf18]</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.draw_graph</span></code>(adata[, layout, init_pos, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.tl.draw_graph.html#episcanpy.api.tl.draw_graph" title="episcanpy.api.tl.draw_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.draw_graph</span></code></a>(adata[, layout, init_pos, …])</p></td>
 <td><p>Force-directed graph drawing <span id="id6">[Islam11]</span> <span id="id7">[Jacomy14]</span> <span id="id8">[Chippada18]</span>.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.tsne</span></code>(adata[, n_pcs, use_rep, perplexity, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.tl.tsne.html#episcanpy.api.tl.tsne" title="episcanpy.api.tl.tsne"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.tsne</span></code></a>(adata[, n_pcs, use_rep, perplexity, …])</p></td>
 <td><p>t-SNE <span id="id9">[Maaten08]</span> <span id="id10">[Amir13]</span> <span id="id11">[Pedregosa11]</span>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.umap</span></code>(adata[, min_dist, spread, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.tl.umap.html#episcanpy.api.tl.umap" title="episcanpy.api.tl.umap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.umap</span></code></a>(adata[, min_dist, spread, …])</p></td>
 <td><p>Embed the neighborhood graph using UMAP <span id="id12">[McInnes18]</span>.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.dpt</span></code>(adata[, n_dcs, n_branchings, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.tl.dpt.html#episcanpy.api.tl.dpt" title="episcanpy.api.tl.dpt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.dpt</span></code></a>(adata[, n_dcs, n_branchings, …])</p></td>
 <td><p>Infer progression of cells through geodesic distance along the graph <span id="id13">[Haghverdi16]</span> <span id="id14">[Wolf19]</span>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.louvain</span></code>(adata[, resolution, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.tl.louvain.html#episcanpy.api.tl.louvain" title="episcanpy.api.tl.louvain"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.louvain</span></code></a>(adata[, resolution, …])</p></td>
 <td><p>Cluster cells into subgroups <span id="id15">[Blondel08]</span> <span id="id16">[Levine15]</span> <span id="id17">[Traag17]</span>.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.leiden</span></code>(adata[, resolution, restrict_to, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.tl.leiden.html#episcanpy.api.tl.leiden" title="episcanpy.api.tl.leiden"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.leiden</span></code></a>(adata[, resolution, restrict_to, …])</p></td>
 <td><p>Cluster cells into subgroups <span id="id18">[Traag18]</span>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.kmeans</span></code>(adata, num_clusters)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.tl.kmeans.html#episcanpy.api.tl.kmeans" title="episcanpy.api.tl.kmeans"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.kmeans</span></code></a>(adata, num_clusters)</p></td>
 <td><p>Compute kmeans clustering using X_pca fits.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.hc</span></code>(adata, num_clusters)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.tl.hc.html#episcanpy.api.tl.hc" title="episcanpy.api.tl.hc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.hc</span></code></a>(adata, num_clusters)</p></td>
 <td><p>Compute hierarchical clustering using X_pca fits.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.getNClusters</span></code>(adata, n_cluster[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.tl.getNClusters.html#episcanpy.api.tl.getNClusters" title="episcanpy.api.tl.getNClusters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.getNClusters</span></code></a>(adata, n_cluster[, …])</p></td>
 <td><p>Function will test different settings of louvain to obtain the target number of clusters.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.dendogram</span></code>(adata, groupby[, n_pcs, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.tl.dendogram.html#episcanpy.api.tl.dendogram" title="episcanpy.api.tl.dendogram"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.dendogram</span></code></a>(adata, groupby[, n_pcs, …])</p></td>
 <td><p>Computes a hierarchical clustering for the given <cite>groupby</cite> categories.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.ARI</span></code>(adata, label_1, label_2)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.tl.ARI.html#episcanpy.api.tl.ARI" title="episcanpy.api.tl.ARI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.ARI</span></code></a>(adata, label_1, label_2)</p></td>
 <td><p>Compute Adjusted Rand Index.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.AMI</span></code>(adata, label_1, label_2)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.tl.AMI.html#episcanpy.api.tl.AMI" title="episcanpy.api.tl.AMI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.AMI</span></code></a>(adata, label_1, label_2)</p></td>
 <td><p>Compute adjusted Mutual Info.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.homogeneity</span></code>(adata, label_1, label_2)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.tl.homogeneity.html#episcanpy.api.tl.homogeneity" title="episcanpy.api.tl.homogeneity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.homogeneity</span></code></a>(adata, label_1, label_2)</p></td>
 <td><p>Compute homogeneity score.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.silhouette</span></code>(adata_name, cluster_annot[, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.tl.silhouette.html#episcanpy.api.tl.silhouette" title="episcanpy.api.tl.silhouette"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tl.silhouette</span></code></a>(adata_name, cluster_annot[, …])</p></td>
 <td><p>Compute silhouette scores.</p></td>
 </tr>
 </tbody>
@@ -588,97 +595,106 @@ For most tools and for some preprocessing functions, you’ll find a plotting fu
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.pca</span></code>(adata, *[, color, gene_symbols, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pl.pca.html#episcanpy.api.pl.pca" title="episcanpy.api.pl.pca"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.pca</span></code></a>(adata, *[, color, gene_symbols, …])</p></td>
 <td><p>Scatter plot in PCA coordinates.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.pca_overview</span></code>(adata[, color, use_raw, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pl.pca_loadings.html#episcanpy.api.pl.pca_loadings" title="episcanpy.api.pl.pca_loadings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.pca_loadings</span></code></a>(adata[, components, …])</p></td>
+<td><p>Rank features according to contributions to PCs.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pl.pca_overview.html#episcanpy.api.pl.pca_overview" title="episcanpy.api.pl.pca_overview"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.pca_overview</span></code></a>(adata[, color, use_raw, …])</p></td>
 <td><p>Plot PCA results.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.pca_variance_ratio</span></code>(adata[, n_pcs, log, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pl.pca_variance_ratio.html#episcanpy.api.pl.pca_variance_ratio" title="episcanpy.api.pl.pca_variance_ratio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.pca_variance_ratio</span></code></a>(adata[, n_pcs, log, …])</p></td>
 <td><p>Plot the variance ratio.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.tsne</span></code>(adata, *[, color, gene_symbols, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pl.tsne.html#episcanpy.api.pl.tsne" title="episcanpy.api.pl.tsne"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.tsne</span></code></a>(adata, *[, color, gene_symbols, …])</p></td>
 <td><p>Scatter plot in tSNE basis.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.umap</span></code>(adata, *[, color, gene_symbols, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pl.umap.html#episcanpy.api.pl.umap" title="episcanpy.api.pl.umap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.umap</span></code></a>(adata, *[, color, gene_symbols, …])</p></td>
 <td><p>Scatter plot in UMAP basis.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.rank_feat_groups</span></code>(adata[, groups, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pl.diffmap.html#episcanpy.api.pl.diffmap" title="episcanpy.api.pl.diffmap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.diffmap</span></code></a>(adata, *[, color, gene_symbols, …])</p></td>
+<td><p>Scatter plot in Diffusion Map basis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pl.draw_graph.html#episcanpy.api.pl.draw_graph" title="episcanpy.api.pl.draw_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.draw_graph</span></code></a>(adata, *[, color, …])</p></td>
+<td><p>Scatter plot in graph-drawing basis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pl.rank_feat_groups.html#episcanpy.api.pl.rank_feat_groups" title="episcanpy.api.pl.rank_feat_groups"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.rank_feat_groups</span></code></a>(adata[, groups, …])</p></td>
 <td><p>Plot ranking of features.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.rank_feat_groups_violin</span></code>(adata[, groups, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pl.rank_feat_groups_violin.html#episcanpy.api.pl.rank_feat_groups_violin" title="episcanpy.api.pl.rank_feat_groups_violin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.rank_feat_groups_violin</span></code></a>(adata[, groups, …])</p></td>
 <td><p>Plot ranking of features for all tested comparisons.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.rank_feat_groups_dotplot</span></code>(adata[, groups, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pl.rank_feat_groups_dotplot.html#episcanpy.api.pl.rank_feat_groups_dotplot" title="episcanpy.api.pl.rank_feat_groups_dotplot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.rank_feat_groups_dotplot</span></code></a>(adata[, groups, …])</p></td>
 <td><p>Plot ranking of features using dotplot plot (see <code class="xref py py-func docutils literal notranslate"><span class="pre">dotplot()</span></code>)</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.rank_feat_groups_stacked_violin</span></code>(adata[, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pl.rank_feat_groups_stacked_violin.html#episcanpy.api.pl.rank_feat_groups_stacked_violin" title="episcanpy.api.pl.rank_feat_groups_stacked_violin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.rank_feat_groups_stacked_violin</span></code></a>(adata[, …])</p></td>
 <td><p>Plot ranking of features using stacked_violin plot (see <code class="xref py py-func docutils literal notranslate"><span class="pre">stacked_violin()</span></code>)</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.rank_feat_groups_matrixplot</span></code>(adata[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pl.rank_feat_groups_matrixplot.html#episcanpy.api.pl.rank_feat_groups_matrixplot" title="episcanpy.api.pl.rank_feat_groups_matrixplot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.rank_feat_groups_matrixplot</span></code></a>(adata[, …])</p></td>
 <td><p>Plot ranking of features using matrixplot plot (see <code class="xref py py-func docutils literal notranslate"><span class="pre">matrixplot()</span></code>)</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.rank_feat_groups_heatmap</span></code>(adata[, groups, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pl.rank_feat_groups_heatmap.html#episcanpy.api.pl.rank_feat_groups_heatmap" title="episcanpy.api.pl.rank_feat_groups_heatmap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.rank_feat_groups_heatmap</span></code></a>(adata[, groups, …])</p></td>
 <td><p>Plot ranking of features using heatmap plot (see <code class="xref py py-func docutils literal notranslate"><span class="pre">heatmap()</span></code>)</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.rank_feat_groups_tracksplot</span></code>(adata[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pl.rank_feat_groups_tracksplot.html#episcanpy.api.pl.rank_feat_groups_tracksplot" title="episcanpy.api.pl.rank_feat_groups_tracksplot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.rank_feat_groups_tracksplot</span></code></a>(adata[, …])</p></td>
 <td><p>Plot ranking of features using heatmap plot (see <code class="xref py py-func docutils literal notranslate"><span class="pre">heatmap()</span></code>)</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.cal_var</span></code>(adata[, show, color, save])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pl.cal_var.html#episcanpy.api.pl.cal_var" title="episcanpy.api.pl.cal_var"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.cal_var</span></code></a>(adata[, show, color, save])</p></td>
 <td><p>Show distribution plots of cells sharing features and variability score.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.violin</span></code>(adata, keys[, groupby, log, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pl.violin.html#episcanpy.api.pl.violin" title="episcanpy.api.pl.violin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.violin</span></code></a>(adata, keys[, groupby, log, …])</p></td>
 <td><p>Violin plot.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.scatter</span></code>(adata[, x, y, color, use_raw, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pl.scatter.html#episcanpy.api.pl.scatter" title="episcanpy.api.pl.scatter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.scatter</span></code></a>(adata[, x, y, color, use_raw, …])</p></td>
 <td><p>Scatter plot along observations or variables axes.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.ranking</span></code>(adata, attr, keys[, dictionary, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pl.ranking.html#episcanpy.api.pl.ranking" title="episcanpy.api.pl.ranking"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.ranking</span></code></a>(adata, attr, keys[, dictionary, …])</p></td>
 <td><p>Plot rankings.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.clustermap</span></code>(adata[, obs_keys, use_raw, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pl.clustermap.html#episcanpy.api.pl.clustermap" title="episcanpy.api.pl.clustermap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.clustermap</span></code></a>(adata[, obs_keys, use_raw, …])</p></td>
 <td><p>Hierarchically-clustered heatmap.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.stacked_violin</span></code>(adata, var_names, groupby)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pl.stacked_violin.html#episcanpy.api.pl.stacked_violin" title="episcanpy.api.pl.stacked_violin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.stacked_violin</span></code></a>(adata, var_names, groupby)</p></td>
 <td><p>Stacked violin plots.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.heatmap</span></code>(adata, var_names, groupby[, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pl.heatmap.html#episcanpy.api.pl.heatmap" title="episcanpy.api.pl.heatmap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.heatmap</span></code></a>(adata, var_names, groupby[, …])</p></td>
 <td><p>Heatmap of the expression values of genes.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.dotplot</span></code>(adata, var_names, groupby[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pl.dotplot.html#episcanpy.api.pl.dotplot" title="episcanpy.api.pl.dotplot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.dotplot</span></code></a>(adata, var_names, groupby[, …])</p></td>
 <td><p>Makes a <em>dot plot</em> of the expression values of <cite>var_names</cite>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.matrixplot</span></code>(adata, var_names, groupby[, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pl.matrixplot.html#episcanpy.api.pl.matrixplot" title="episcanpy.api.pl.matrixplot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.matrixplot</span></code></a>(adata, var_names, groupby[, …])</p></td>
 <td><p>Creates a heatmap of the mean expression values per group of each var_names.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.tracksplot</span></code>(adata, var_names, groupby[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pl.tracksplot.html#episcanpy.api.pl.tracksplot" title="episcanpy.api.pl.tracksplot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.tracksplot</span></code></a>(adata, var_names, groupby[, …])</p></td>
 <td><p>In this type of plot each var_name is plotted as a filled line plot where the y values correspond to the var_name values and x is each of the cells.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.dendrogram</span></code>(adata, groupby[, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pl.dendrogram.html#episcanpy.api.pl.dendrogram" title="episcanpy.api.pl.dendrogram"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.dendrogram</span></code></a>(adata, groupby[, …])</p></td>
 <td><p>Plots a dendrogram of the categories defined in <cite>groupby</cite>.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.correlation_matrix</span></code>(adata, groupby[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pl.correlation_matrix.html#episcanpy.api.pl.correlation_matrix" title="episcanpy.api.pl.correlation_matrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.correlation_matrix</span></code></a>(adata, groupby[, …])</p></td>
 <td><p>Plots the correlation matrix computed as part of <cite>sc.tl.dendrogram</cite>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.prct_overlap</span></code>(adata, key_1, key_2[, norm, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pl.prct_overlap.html#episcanpy.api.pl.prct_overlap" title="episcanpy.api.pl.prct_overlap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.prct_overlap</span></code></a>(adata, key_1, key_2[, norm, …])</p></td>
 <td><p>% or cell count corresponding to the overlap of different cell types between 2 set of annotations/clusters.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.overlap_heatmap</span></code>(adata, key_1, key_2[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pl.overlap_heatmap.html#episcanpy.api.pl.overlap_heatmap" title="episcanpy.api.pl.overlap_heatmap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.overlap_heatmap</span></code></a>(adata, key_1, key_2[, …])</p></td>
 <td><p>Heatmap of the cluster correspondance between 2 set of annaotations.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.cluster_composition</span></code>(adata, cluster, condition)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pl.cluster_composition.html#episcanpy.api.pl.cluster_composition" title="episcanpy.api.pl.cluster_composition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.cluster_composition</span></code></a>(adata, cluster, condition)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.silhouette</span></code>(adata_name, cluster_annot[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pl.silhouette.html#episcanpy.api.pl.silhouette" title="episcanpy.api.pl.silhouette"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.silhouette</span></code></a>(adata_name, cluster_annot[, …])</p></td>
 <td><p>Plot the product of tl.silhouette as a silhouette plot</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.silhouette_tot</span></code>(adata_name, cluster_annot)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pl.silhouette_tot.html#episcanpy.api.pl.silhouette_tot" title="episcanpy.api.pl.silhouette_tot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.silhouette_tot</span></code></a>(adata_name, cluster_annot)</p></td>
 <td><p>Both compute silhouette scores and plot it.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.cal_var</span></code>(adata[, show, color, save])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="episcanpy.api.pl.cal_var.html#episcanpy.api.pl.cal_var" title="episcanpy.api.pl.cal_var"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.cal_var</span></code></a>(adata[, show, color, save])</p></td>
 <td><p>Show distribution plots of cells sharing features and variability score.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.variability_features</span></code>(adata[, min_score, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="episcanpy.api.pl.variability_features.html#episcanpy.api.pl.variability_features" title="episcanpy.api.pl.variability_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.variability_features</span></code></a>(adata[, min_score, …])</p></td>
 <td><p>This function computes a variability score to rank the most variable features across all cells.</p></td>
 </tr>
 </tbody>
@@ -692,7 +708,7 @@ For most tools and for some preprocessing functions, you’ll find a plotting fu
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="episcanpy.ct.bld_mtx_fly.html" class="btn btn-neutral float-right" title="episcanpy.ct.bld_mtx_fly" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="episcanpy.api.ct.bld_mtx_fly.html" class="btn btn-neutral float-right" title="episcanpy.api.ct.bld_mtx_fly" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="../installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

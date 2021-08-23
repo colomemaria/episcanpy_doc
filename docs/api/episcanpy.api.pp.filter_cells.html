@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>episcanpy.api.pp.filter_cells &mdash; epiScanpy 0.3.1+67.g3ad26ed documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/typehints.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="episcanpy.api.pp.filter_features" href="episcanpy.api.pp.filter_features.html" />
+    <link rel="prev" title="episcanpy.api.pp.read_ATAC_10x" href="episcanpy.api.pp.read_ATAC_10x.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> epiScanpy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.3.1+67.g3ad26ed
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic_usage.html">Usage Principles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../System_Requirements.html">System Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#count-matrices-ct">Count Matrices: CT</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#preprocessing-pp">Preprocessing: PP</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.coverage_cells.html">episcanpy.api.pp.coverage_cells</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.commonness_features.html">episcanpy.api.pp.commonness_features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.correlation_pc.html">episcanpy.api.pp.correlation_pc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.coverage_features.html">episcanpy.api.pp.coverage_features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.density_features.html">episcanpy.api.pp.density_features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.select_var_feature.html">episcanpy.api.pp.select_var_feature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.cal_var.html">episcanpy.api.pp.cal_var</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.variability_features.html">episcanpy.api.pp.variability_features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.binarize.html">episcanpy.api.pp.binarize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.lazy.html">episcanpy.api.pp.lazy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.load_metadata.html">episcanpy.api.pp.load_metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.read_ATAC_10x.html">episcanpy.api.pp.read_ATAC_10x</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">episcanpy.api.pp.filter_cells</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.filter_features.html">episcanpy.api.pp.filter_features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.normalize_total.html">episcanpy.api.pp.normalize_total</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.pca.html">episcanpy.api.pp.pca</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.normalize_per_cell.html">episcanpy.api.pp.normalize_per_cell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.regress_out.html">episcanpy.api.pp.regress_out</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.subsample.html">episcanpy.api.pp.subsample</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.downsample_counts.html">episcanpy.api.pp.downsample_counts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.neighbors.html">episcanpy.api.pp.neighbors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.sparse.html">episcanpy.api.pp.sparse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.log1p.html">episcanpy.api.pp.log1p</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.pp.sparse.html">episcanpy.api.pp.sparse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#methylation-matrices">Methylation matrices</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#tools-tl">Tools: TL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#plotting-pl">Plotting: PL</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">epiScanpy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">API</a> &raquo;</li>
+        
+      <li>episcanpy.api.pp.filter_cells</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <!-- User defined GitHub URL -->
+              <a href="https://github.com/colomemaria/epiScanpy/tree/master/episcanpy_document/epiScanpy/episcanpy/preprocessing/_scanpy_fct.py#L6-L93" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="episcanpy-api-pp-filter-cells">
+<h1>episcanpy.api.pp.filter_cells<a class="headerlink" href="#episcanpy-api-pp-filter-cells" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="episcanpy.api.pp.filter_cells">
+<span class="sig-prename descclassname"><span class="pre">episcanpy.api.pp.</span></span><span class="sig-name descname"><span class="pre">filter_cells</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">adata</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_counts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_counts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#episcanpy.api.pp.filter_cells" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter cell outliers based on counts and numbers of genes expressed.</p>
+<p>For instance, only keep cells with at least <cite>min_counts</cite> counts or
+<cite>min_features</cite> genes expressed. This is to filter measurement outliers,
+i.e. “unreliable” observations.</p>
+<p>Only provide one of the optional parameters <code class="docutils literal notranslate"><span class="pre">min_counts</span></code>, <code class="docutils literal notranslate"><span class="pre">min_features</span></code>,
+<code class="docutils literal notranslate"><span class="pre">max_counts</span></code>, <code class="docutils literal notranslate"><span class="pre">max_features</span></code> per call.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>data</strong></dt><dd><p>The (annotated) data matrix of shape <code class="docutils literal notranslate"><span class="pre">n_obs</span></code> × <code class="docutils literal notranslate"><span class="pre">n_vars</span></code>.
+Rows correspond to cells and columns to genes.</p>
+</dd>
+<dt><strong>min_counts</strong></dt><dd><p>Minimum number of counts required for a cell to pass filtering.</p>
+</dd>
+<dt><strong>min_features</strong></dt><dd><p>Minimum number of genes expressed required for a cell to pass filtering.</p>
+</dd>
+<dt><strong>max_counts</strong></dt><dd><p>Maximum number of counts required for a cell to pass filtering.</p>
+</dd>
+<dt><strong>max_features</strong></dt><dd><p>Maximum number of genes expressed required for a cell to pass filtering.</p>
+</dd>
+<dt><strong>inplace</strong></dt><dd><p>Perform computation inplace or return result.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>Depending on <code class="docutils literal notranslate"><span class="pre">inplace</span></code>, returns the following arrays or directly subsets
+and annotates the data matrix:</p>
+<dl>
+<dt><strong>cells_subset</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a></span></dt><dd><p>Boolean index mask that does filtering. <code class="docutils literal notranslate"><span class="pre">True</span></code> means that the
+cell is kept. <code class="docutils literal notranslate"><span class="pre">False</span></code> means the cell is removed.</p>
+</dd>
+<dt><strong>number_per_cell</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a></span></dt><dd><p>Depending on what was tresholded (<code class="docutils literal notranslate"><span class="pre">counts</span></code> or <code class="docutils literal notranslate"><span class="pre">genes</span></code>), the array stores
+<code class="docutils literal notranslate"><span class="pre">n_counts</span></code> or <code class="docutils literal notranslate"><span class="pre">n_cells</span></code> per gene.</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">adata</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">krumsiek11</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adata</span><span class="o">.</span><span class="n">n_obs</span>
+<span class="go">640</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adata</span><span class="o">.</span><span class="n">var_names</span>
+<span class="go">[&#39;Gata2&#39; &#39;Gata1&#39; &#39;Fog1&#39; &#39;EKLF&#39; &#39;Fli1&#39; &#39;SCL&#39; &#39;Cebpa&#39;</span>
+<span class="go"> &#39;Pu.1&#39; &#39;cJun&#39; &#39;EgrNab&#39; &#39;Gfi1&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># add some true zeros</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adata</span><span class="o">.</span><span class="n">X</span><span class="p">[</span><span class="n">adata</span><span class="o">.</span><span class="n">X</span> <span class="o">&lt;</span> <span class="mf">0.3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># simply compute the number of genes per cell</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sc</span><span class="o">.</span><span class="n">pp</span><span class="o">.</span><span class="n">filter_cells</span><span class="p">(</span><span class="n">adata</span><span class="p">,</span> <span class="n">min_features</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adata</span><span class="o">.</span><span class="n">n_obs</span>
+<span class="go">640</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adata</span><span class="o">.</span><span class="n">obs</span><span class="p">[</span><span class="s1">&#39;nb_features&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># filter manually</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adata_copy</span> <span class="o">=</span> <span class="n">adata</span><span class="p">[</span><span class="n">adata</span><span class="o">.</span><span class="n">obs</span><span class="p">[</span><span class="s1">&#39;nb_features&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adata_copy</span><span class="o">.</span><span class="n">obs</span><span class="p">[</span><span class="s1">&#39;nb_features&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adata</span><span class="o">.</span><span class="n">n_obs</span>
+<span class="go">554</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adata</span><span class="o">.</span><span class="n">obs</span><span class="p">[</span><span class="s1">&#39;nb_features&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># actually do some filtering</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sc</span><span class="o">.</span><span class="n">pp</span><span class="o">.</span><span class="n">filter_cells</span><span class="p">(</span><span class="n">adata</span><span class="p">,</span> <span class="n">min_features</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adata</span><span class="o">.</span><span class="n">n_obs</span>
+<span class="go">554</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adata</span><span class="o">.</span><span class="n">obs</span><span class="p">[</span><span class="s1">&#39;nb_features&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="go">3</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="episcanpy.api.pp.filter_features.html" class="btn btn-neutral float-right" title="episcanpy.api.pp.filter_features" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="episcanpy.api.pp.read_ATAC_10x.html" class="btn btn-neutral float-left" title="episcanpy.api.pp.read_ATAC_10x" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Anna Danese, Maria Richter, Kridsadakorn Chaichoompu..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

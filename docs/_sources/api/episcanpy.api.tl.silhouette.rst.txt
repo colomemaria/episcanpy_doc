@@ -1,4 +1,4 @@
-﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy/tools/_silhouette.py#L5-L61
+﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy_document/epiScanpy/episcanpy/tools/_silhouette.py#L5-L61
 
 episcanpy.api.tl.silhouette
 ===========================

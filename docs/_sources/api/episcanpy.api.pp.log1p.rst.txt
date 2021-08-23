@@ -1,0 +1,8 @@
+﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/preprocessing/_simple.py#L285-L329
+
+episcanpy.api.pp.log1p
+======================
+
+.. currentmodule:: episcanpy.api.pp
+
+.. autofunction:: log1p

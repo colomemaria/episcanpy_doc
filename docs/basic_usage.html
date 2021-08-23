@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Usage Principles &mdash; epiScanpy 0.3.1+47.gb297b30 documentation</title>
+  <title>Usage Principles &mdash; epiScanpy 0.3.1+67.g3ad26ed documentation</title>
   
 
   
@@ -68,7 +68,7 @@
             
             
               <div class="version">
-                0.3.1+47.gb297b30
+                0.3.1+67.g3ad26ed
               </div>
             
           
@@ -190,7 +190,7 @@ All the functions to build the count matrices (for ATAC, methylation or other) w
 </pre></div>
 </div>
 <p>If you have an already build matrix, you can load it with any additional metadata (such as cell annotations or batches).</p>
-<p>The count matrix, either the one that has been constructed or uploaded, with any additional informations (such as cell annotations or batches) are stored as an <a class="reference external" href="https://anndata.readthedocs.io/en/latest/anndata.AnnData.html#anndata.AnnData" title="(in anndata v0.7.7.dev2+ge7a3a3e)"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnnData</span></code></a> object. All functions for quality control and preprocessing are called using <code class="docutils literal notranslate"><span class="pre">epi.pp</span></code> (pp = preprocessing).</p>
+<p>The count matrix, either the one that has been constructed or uploaded, with any additional informations (such as cell annotations or batches) are stored as an <a class="reference external" href="https://anndata.readthedocs.io/en/latest/anndata.AnnData.html#anndata.AnnData" title="(in anndata v0.7.7.dev7+g9620645)"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnnData</span></code></a> object. All functions for quality control and preprocessing are called using <code class="docutils literal notranslate"><span class="pre">epi.pp</span></code> (pp = preprocessing).</p>
 <p>To visualise how common features are and what is the coverage distribution of the count matrix features, use:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">epi</span><span class="o">.</span><span class="n">pp</span><span class="o">.</span><span class="n">commoness_features</span><span class="p">(</span><span class="n">adata</span><span class="p">,</span> <span class="o">**</span><span class="n">processing_params</span><span class="p">)</span>
 <span class="n">epi</span><span class="o">.</span><span class="n">pp</span><span class="o">.</span><span class="n">coverage_cells</span><span class="p">(</span><span class="n">adata</span><span class="p">,</span> <span class="o">**</span><span class="n">processing_params</span><span class="p">)</span>

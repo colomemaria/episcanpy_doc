@@ -1,0 +1,8 @@
+﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy_document/epiScanpy/episcanpy/preprocessing/_quality_control.py#L510-L559
+
+episcanpy.api.pp.density\_features
+==================================
+
+.. currentmodule:: episcanpy.api.pp
+
+.. autofunction:: density_features
