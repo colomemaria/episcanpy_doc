@@ -7,7 +7,6 @@ Here is how to build the website from the beginning. Please skip the step that y
 ```
 conda create -n compile_doc python=3.7
 conda activate compile_doc
-
 ```
 
 ## Install the needed libraries and software
