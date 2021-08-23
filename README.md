@@ -1,5 +1,7 @@
 # How to build the website for the EpiScanpy document
 
+To view the website of EpiScanpy document, visit https://colomemaria.github.io/episcanpy_doc/
+
 Here is how to build the website from the beginning. Please skip the step that you have previously done, for example, create a new conda environment.
 
 ## Create a conda environment for compilation
