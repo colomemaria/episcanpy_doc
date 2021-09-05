@@ -1,0 +1,8 @@
+﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy_document/epiScanpy/episcanpy/plotting/_scanpy_plotting.py#L506-L530
+
+episcanpy.api.pl.pca\_loadings
+==============================
+
+.. currentmodule:: episcanpy.api.pl
+
+.. autofunction:: pca_loadings

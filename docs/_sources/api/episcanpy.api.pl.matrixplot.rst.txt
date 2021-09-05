@@ -1,0 +1,8 @@
+﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/plotting/_matrixplot.py#L279-L415
+
+episcanpy.api.pl.matrixplot
+===========================
+
+.. currentmodule:: episcanpy.api.pl
+
+.. autofunction:: matrixplot

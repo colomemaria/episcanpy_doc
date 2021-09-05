@@ -1,0 +1,8 @@
+﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy_document/epiScanpy/episcanpy/plotting/_scanpy_plotting.py#L374-L405
+
+episcanpy.api.pl.rank\_feat\_groups\_heatmap
+============================================
+
+.. currentmodule:: episcanpy.api.pl
+
+.. autofunction:: rank_feat_groups_heatmap
