@@ -1,4 +1,4 @@
-﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy_document/epiScanpy/episcanpy/count_matrix/_load_met_ct_mtx.py#L5-L43
+﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy/count_matrix/_load_met_ct_mtx.py#L5-L43
 
 episcanpy.api.ct.load\_met\_noimput
 ===================================

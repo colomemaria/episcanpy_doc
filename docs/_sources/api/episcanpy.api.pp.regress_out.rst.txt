@@ -1,8 +1,0 @@
-﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy_document/epiScanpy/episcanpy/preprocessing/_scanpy_fct.py#L430-L455
-
-episcanpy.api.pp.regress\_out
-=============================
-
-.. currentmodule:: episcanpy.api.pp
-
-.. autofunction:: regress_out

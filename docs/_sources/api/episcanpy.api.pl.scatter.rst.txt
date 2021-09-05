@@ -1,8 +1,0 @@
-﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/plotting/_anndata.py#L61-L150
-
-episcanpy.api.pl.scatter
-========================
-
-.. currentmodule:: episcanpy.api.pl
-
-.. autofunction:: scatter

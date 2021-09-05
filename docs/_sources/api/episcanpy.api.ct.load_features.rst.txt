@@ -1,4 +1,4 @@
-﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy_document/epiScanpy/episcanpy/count_matrix/_features.py#L190-L246
+﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy/count_matrix/_features.py#L190-L246
 
 episcanpy.api.ct.load\_features
 ===============================

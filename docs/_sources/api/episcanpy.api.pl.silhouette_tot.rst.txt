@@ -1,4 +1,4 @@
-﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy_document/epiScanpy/episcanpy/plotting/_silhouette.py#L241-L333
+﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy/plotting/_silhouette.py#L241-L333
 
 episcanpy.api.pl.silhouette\_tot
 ================================

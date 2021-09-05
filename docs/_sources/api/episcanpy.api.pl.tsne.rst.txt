@@ -1,8 +1,0 @@
-﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/_tools/scatterplots.py#L662-L700
-
-episcanpy.api.pl.tsne
-=====================
-
-.. currentmodule:: episcanpy.api.pl
-
-.. autofunction:: tsne

@@ -1,8 +1,0 @@
-﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/_tools/scatterplots.py#L742-L795
-
-episcanpy.api.pl.draw\_graph
-============================
-
-.. currentmodule:: episcanpy.api.pl
-
-.. autofunction:: draw_graph

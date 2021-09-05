@@ -1,4 +1,4 @@
-﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy_document/epiScanpy/episcanpy/preprocessing/_load_matrix.py#L9-L42
+﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy/preprocessing/_load_matrix.py#L9-L42
 
 episcanpy.api.pp.read\_ATAC\_10x
 ================================

@@ -1,8 +1,0 @@
-﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy_document/epiScanpy/episcanpy/preprocessing/_scanpy_fct.py#L95-L143
-
-episcanpy.api.pp.filter\_features
-=================================
-
-.. currentmodule:: episcanpy.api.pp
-
-.. autofunction:: filter_features

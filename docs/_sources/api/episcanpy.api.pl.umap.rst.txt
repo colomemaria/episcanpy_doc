@@ -1,8 +1,0 @@
-﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/_tools/scatterplots.py#L600-L659
-
-episcanpy.api.pl.umap
-=====================
-
-.. currentmodule:: episcanpy.api.pl
-
-.. autofunction:: umap

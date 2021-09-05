@@ -1,8 +1,0 @@
-﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/plotting/_dotplot.py#L793-L988
-
-episcanpy.api.pl.dotplot
-========================
-
-.. currentmodule:: episcanpy.api.pl
-
-.. autofunction:: dotplot

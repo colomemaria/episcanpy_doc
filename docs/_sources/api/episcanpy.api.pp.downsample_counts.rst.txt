@@ -1,8 +1,0 @@
-﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy_document/epiScanpy/episcanpy/preprocessing/_scanpy_fct.py#L487-L525
-
-episcanpy.api.pp.downsample\_counts
-===================================
-
-.. currentmodule:: episcanpy.api.pp
-
-.. autofunction:: downsample_counts
