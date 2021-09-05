@@ -1,8 +1,0 @@
-﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy_document/epiScanpy/episcanpy/tools/_geneactivity.py#L7-L157
-
-episcanpy.api.tl.geneactivity
-=============================
-
-.. currentmodule:: episcanpy.api.tl
-
-.. autofunction:: geneactivity

@@ -1,0 +1,342 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>episcanpy.api.tl.dpt &mdash; epiScanpy 0.3.1+55.g0b3d807 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/typehints.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="episcanpy.api.tl.louvain" href="episcanpy.api.tl.louvain.html" />
+    <link rel="prev" title="episcanpy.api.tl.umap" href="episcanpy.api.tl.umap.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> epiScanpy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.3.1+55.g0b3d807
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic_usage.html">Usage Principles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../System_Requirements.html">System Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#count-matrices-ct">Count Matrices: CT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#preprocessing-pp">Preprocessing: PP</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#tools-tl">Tools: TL</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.rank_features.html">episcanpy.api.tl.rank_features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.lazy.html">episcanpy.api.tl.lazy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.load_markers.html">episcanpy.api.tl.load_markers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.identify_cluster.html">episcanpy.api.tl.identify_cluster</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.top_feature_genes.html">episcanpy.api.tl.top_feature_genes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.var_features_to_genes.html">episcanpy.api.tl.var_features_to_genes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.geneactivity.html">episcanpy.api.tl.geneactivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.diffmap.html">episcanpy.api.tl.diffmap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.draw_graph.html">episcanpy.api.tl.draw_graph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.tsne.html">episcanpy.api.tl.tsne</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.umap.html">episcanpy.api.tl.umap</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">episcanpy.api.tl.dpt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.louvain.html">episcanpy.api.tl.louvain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.leiden.html">episcanpy.api.tl.leiden</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.kmeans.html">episcanpy.api.tl.kmeans</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.hc.html">episcanpy.api.tl.hc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.getNClusters.html">episcanpy.api.tl.getNClusters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.dendogram.html">episcanpy.api.tl.dendogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.ARI.html">episcanpy.api.tl.ARI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.AMI.html">episcanpy.api.tl.AMI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.homogeneity.html">episcanpy.api.tl.homogeneity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.silhouette.html">episcanpy.api.tl.silhouette</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#plotting-pl">Plotting: PL</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">epiScanpy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">API</a> &raquo;</li>
+        
+      <li>episcanpy.api.tl.dpt</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <!-- User defined GitHub URL -->
+              <a href="https://github.com/colomemaria/epiScanpy/tree/master/tools/_dpt.py#L31-L190" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="episcanpy-api-tl-dpt">
+<h1>episcanpy.api.tl.dpt<a class="headerlink" href="#episcanpy-api-tl-dpt" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="episcanpy.api.tl.dpt">
+<span class="sig-prename descclassname"><span class="pre">episcanpy.api.tl.</span></span><span class="sig-name descname"><span class="pre">dpt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">adata</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_dcs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_branchings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_group_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_kendall_tau_shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">neighbors_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#episcanpy.api.tl.dpt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Infer progression of cells through geodesic distance along the graph
+<span id="id1">[Haghverdi16]</span> <span id="id2">[Wolf19]</span>.</p>
+<p>Reconstruct the progression of a biological process from snapshot
+data. <cite>Diffusion Pseudotime</cite> has been introduced by <span id="id3">[Haghverdi16]</span> and
+implemented within Scanpy <a class="reference internal" href="../references.html#wolf18" id="id4"><span>[Wolf18]</span></a>. Here, we use a further developed
+version, which is able to deal with disconnected graphs <span id="id5">[Wolf19]</span> and can
+be run in a <cite>hierarchical</cite> mode by setting the parameter
+<cite>n_branchings&gt;1</cite>. We recommend, however, to only use
+<code class="xref py py-func docutils literal notranslate"><span class="pre">dpt()</span></code> for computing pseudotime (<cite>n_branchings=0</cite>) and
+to detect branchings via <code class="xref py py-func docutils literal notranslate"><span class="pre">paga()</span></code>. For pseudotime, you need
+to annotate your data with a root cell. For instance:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adata</span><span class="o">.</span><span class="n">uns</span><span class="p">[</span><span class="s1">&#39;iroot&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">flatnonzero</span><span class="p">(</span><span class="n">adata</span><span class="o">.</span><span class="n">obs</span><span class="p">[</span><span class="s1">&#39;cell_types&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Stem&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>This requires to run <code class="xref py py-func docutils literal notranslate"><span class="pre">neighbors()</span></code>, first. In order to
+reproduce the original implementation of DPT, use <cite>method==’gauss’</cite> in
+this. Using the default <cite>method==’umap’</cite> only leads to minor quantitative
+differences, though.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 1.1.</span></p>
+</div>
+<p><code class="xref py py-func docutils literal notranslate"><span class="pre">dpt()</span></code> also requires to run
+<code class="xref py py-func docutils literal notranslate"><span class="pre">diffmap()</span></code> first. As previously,
+<code class="xref py py-func docutils literal notranslate"><span class="pre">dpt()</span></code> came with a default parameter of <code class="docutils literal notranslate"><span class="pre">n_dcs=10</span></code> but
+<code class="xref py py-func docutils literal notranslate"><span class="pre">diffmap()</span></code> has a default parameter of <code class="docutils literal notranslate"><span class="pre">n_comps=15</span></code>,
+you need to pass <code class="docutils literal notranslate"><span class="pre">n_comps=10</span></code> in <code class="xref py py-func docutils literal notranslate"><span class="pre">diffmap()</span></code> in order
+to exactly reproduce previous <code class="xref py py-func docutils literal notranslate"><span class="pre">dpt()</span></code> results.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>adata</strong> : <span class="annotation terse"><a class="reference external" href="https://anndata.readthedocs.io/en/latest/anndata.AnnData.html#anndata.AnnData" title="(in anndata v0.7.7.dev8+g451f73b)"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnnData</span></code></a></span><span class="annotation full"><a class="reference external" href="https://anndata.readthedocs.io/en/latest/anndata.AnnData.html#anndata.AnnData" title="(in anndata v0.7.7.dev8+g451f73b)"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnnData</span></code></a></span></dt><dd><p>Annotated data matrix.</p>
+</dd>
+<dt><strong>n_dcs</strong> : <span class="annotation terse"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></span><span class="annotation full"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></span> (default: <code class="docutils literal notranslate"><span class="pre">10</span></code>)</dt><dd><p>The number of diffusion components to use.</p>
+</dd>
+<dt><strong>n_branchings</strong> : <span class="annotation terse"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></span><span class="annotation full"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></span> (default: <code class="docutils literal notranslate"><span class="pre">0</span></code>)</dt><dd><p>Number of branchings to detect.</p>
+</dd>
+<dt><strong>min_group_size</strong> : <span class="annotation terse"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a></span><span class="annotation full"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a></span> (default: <code class="docutils literal notranslate"><span class="pre">0.01</span></code>)</dt><dd><p>During recursive splitting of branches (‘dpt groups’) for <cite>n_branchings</cite>
+&gt; 1, do not consider groups that contain less than <cite>min_group_size</cite> data
+points. If a float, <cite>min_group_size</cite> refers to a fraction of the total
+number of data points.</p>
+</dd>
+<dt><strong>allow_kendall_tau_shift</strong> : <span class="annotation terse"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></span><span class="annotation full"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></span> (default: <code class="docutils literal notranslate"><span class="pre">True</span></code>)</dt><dd><p>If a very small branch is detected upon splitting, shift away from
+maximum correlation in Kendall tau criterion of <span id="id6">[Haghverdi16]</span> to
+stabilize the splitting.</p>
+</dd>
+<dt><strong>neighbors_key</strong> : <span class="annotation terse"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> | <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></span><span class="annotation full"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.9)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]</span> (default: <code class="docutils literal notranslate"><span class="pre">None</span></code>)</dt><dd><p>If not specified, dpt looks .uns[‘neighbors’] for neighbors settings
+and .obsp[‘connectivities’], .obsp[‘distances’] for connectivities and
+distances respectively (default storage places for pp.neighbors).
+If specified, dpt looks .uns[neighbors_key] for neighbors settings and
+.obsp[.uns[neighbors_key][‘connectivities_key’]],
+.obsp[.uns[neighbors_key][‘distances_key’]] for connectivities and distances
+respectively.</p>
+</dd>
+<dt><strong>copy</strong> : <span class="annotation terse"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></span><span class="annotation full"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></span> (default: <code class="docutils literal notranslate"><span class="pre">False</span></code>)</dt><dd><p>Copy instance before computation and return a copy.
+Otherwise, perform computation inplace and return <cite>None</cite>.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><span class="annotation terse"><a class="reference external" href="https://anndata.readthedocs.io/en/latest/anndata.AnnData.html#anndata.AnnData" title="(in anndata v0.7.7.dev8+g451f73b)"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnnData</span></code></a> | <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></span><span class="annotation full"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.9)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://anndata.readthedocs.io/en/latest/anndata.AnnData.html#anndata.AnnData" title="(in anndata v0.7.7.dev8+g451f73b)"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnnData</span></code></a>]</span></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><p>Depending on <cite>copy</cite>, returns or updates <cite>adata</cite> with the following fields.</p>
+<p>If <cite>n_branchings==0</cite>, no field <cite>dpt_groups</cite> will be written.</p>
+<dl>
+<dt><cite>dpt_pseudotime</cite><span class="classifier"><a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v1.3.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pandas.Series</span></code></a> (<cite>adata.obs</cite>, dtype <cite>float</cite>)</span></dt><dd><p>Array of dim (number of samples) that stores the pseudotime of each
+cell, that is, the DPT distance with respect to the root cell.</p>
+</dd>
+<dt><cite>dpt_groups</cite><span class="classifier"><a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v1.3.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pandas.Series</span></code></a> (<cite>adata.obs</cite>, dtype <cite>category</cite>)</span></dt><dd><p>Array of dim (number of samples) that stores the subgroup id (‘0’,
+‘1’, …) for each cell. The groups  typically correspond to
+‘progenitor cells’, ‘undecided cells’ or ‘branches’ of a process.</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>The tool is similar to the R package <cite>destiny</cite> of <a class="reference internal" href="../references.html#angerer16" id="id7"><span>[Angerer16]</span></a>.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="episcanpy.api.tl.louvain.html" class="btn btn-neutral float-right" title="episcanpy.api.tl.louvain" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="episcanpy.api.tl.umap.html" class="btn btn-neutral float-left" title="episcanpy.api.tl.umap" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Anna Danese, Maria Richter, Kridsadakorn Chaichoompu..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

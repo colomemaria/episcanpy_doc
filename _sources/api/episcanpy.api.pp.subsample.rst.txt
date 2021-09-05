@@ -1,0 +1,8 @@
+﻿:github_url: https://github.com/colomemaria/epiScanpy/tree/master/episcanpy_document/epiScanpy/episcanpy/preprocessing/_scanpy_fct.py#L458-L485
+
+episcanpy.api.pp.subsample
+==========================
+
+.. currentmodule:: episcanpy.api.pp
+
+.. autofunction:: subsample

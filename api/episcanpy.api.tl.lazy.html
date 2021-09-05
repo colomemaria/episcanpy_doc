@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>episcanpy.api.tl.lazy &mdash; epiScanpy 0.3.1+55.g0b3d807 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/typehints.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="episcanpy.api.tl.load_markers" href="episcanpy.api.tl.load_markers.html" />
+    <link rel="prev" title="episcanpy.api.tl.rank_features" href="episcanpy.api.tl.rank_features.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> epiScanpy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.3.1+55.g0b3d807
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic_usage.html">Usage Principles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../System_Requirements.html">System Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#count-matrices-ct">Count Matrices: CT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#preprocessing-pp">Preprocessing: PP</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#tools-tl">Tools: TL</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.rank_features.html">episcanpy.api.tl.rank_features</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">episcanpy.api.tl.lazy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.load_markers.html">episcanpy.api.tl.load_markers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.identify_cluster.html">episcanpy.api.tl.identify_cluster</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.top_feature_genes.html">episcanpy.api.tl.top_feature_genes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.var_features_to_genes.html">episcanpy.api.tl.var_features_to_genes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.geneactivity.html">episcanpy.api.tl.geneactivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.diffmap.html">episcanpy.api.tl.diffmap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.draw_graph.html">episcanpy.api.tl.draw_graph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.tsne.html">episcanpy.api.tl.tsne</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.umap.html">episcanpy.api.tl.umap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.dpt.html">episcanpy.api.tl.dpt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.louvain.html">episcanpy.api.tl.louvain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.leiden.html">episcanpy.api.tl.leiden</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.kmeans.html">episcanpy.api.tl.kmeans</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.hc.html">episcanpy.api.tl.hc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.getNClusters.html">episcanpy.api.tl.getNClusters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.dendogram.html">episcanpy.api.tl.dendogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.ARI.html">episcanpy.api.tl.ARI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.AMI.html">episcanpy.api.tl.AMI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.homogeneity.html">episcanpy.api.tl.homogeneity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="episcanpy.api.tl.silhouette.html">episcanpy.api.tl.silhouette</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#plotting-pl">Plotting: PL</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">epiScanpy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">API</a> &raquo;</li>
+        
+      <li>episcanpy.api.tl.lazy</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <!-- User defined GitHub URL -->
+              <a href="https://github.com/colomemaria/epiScanpy/tree/master/episcanpy_document/epiScanpy/episcanpy/tools/_recipe.py#L4-L53" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="episcanpy-api-tl-lazy">
+<h1>episcanpy.api.tl.lazy<a class="headerlink" href="#episcanpy-api-tl-lazy" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="episcanpy.api.tl.lazy">
+<span class="sig-prename descclassname"><span class="pre">episcanpy.api.tl.</span></span><span class="sig-name descname"><span class="pre">lazy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">adata</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pp_pca</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#episcanpy.api.tl.lazy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Automatically computes PCA coordinates, loadings and variance decomposition, a neighborhood graph of observations,
+t-distributed stochastic neighborhood embedding (tSNE) Uniform Manifold Approximation and Projection (UMAP)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>adata</strong> : <a class="reference external" href="https://anndata.readthedocs.io/en/latest/anndata.AnnData.html#anndata.AnnData" title="(in anndata v0.7.7.dev8+g451f73b)"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnnData</span></code></a></dt><dd><p>Annotated data matrix.</p>
+</dd>
+<dt><strong>pp_pca</strong> : <cite>bool</cite> (default: <cite>True</cite>)</dt><dd><p>Computes PCA coordinates before the neighborhood graph</p>
+</dd>
+<dt><strong>copy</strong> : <cite>bool</cite> (default: <cite>False</cite>)</dt><dd><p>Return a copy instead of writing to adata.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>Depending on <cite>copy</cite>, returns or updates <cite>adata</cite> with the following fields.
+X_pca : <cite>adata.obsm</cite></p>
+<blockquote>
+<div><p>PCA coordinates of data.</p>
+</div></blockquote>
+<dl>
+<dt>connectivities<span class="classifier">sparse matrix (<cite>.uns[‘neighbors’]</cite>, dtype <cite>float32</cite>)</span></dt><dd><p>Weighted adjacency matrix of the neighborhood graph of data
+points. Weights should be interpreted as connectivities.</p>
+</dd>
+<dt>distances<span class="classifier">sparse matrix (<cite>.uns[‘neighbors’]</cite>, dtype <cite>float32</cite>)</span></dt><dd><p>Instead of decaying weights, this stores distances for each pair of
+neighbors.</p>
+</dd>
+<dt>X_tsne<span class="classifier"><cite>np.ndarray</cite> (<cite>adata.obs</cite>, dtype <cite>float</cite>)</span></dt><dd><p>tSNE coordinates of data.</p>
+</dd>
+<dt>X_umap<span class="classifier"><cite>adata.obsm</cite></span></dt><dd><p>UMAP coordinates of data.</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="episcanpy.api.tl.load_markers.html" class="btn btn-neutral float-right" title="episcanpy.api.tl.load_markers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="episcanpy.api.tl.rank_features.html" class="btn btn-neutral float-left" title="episcanpy.api.tl.rank_features" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Anna Danese, Maria Richter, Kridsadakorn Chaichoompu..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
